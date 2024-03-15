@@ -1,0 +1,17 @@
+{
+    "theme_color": "#fff6ef",
+    "background_color": "#fff6ef",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Ramadan Planner",
+    "short_name": "Ramadan Planner",
+    "description": "Ramadan Planner",
+    "icons": [
+        {
+            "src": "/icon.png",
+            "sizes": "500x500",
+            "type": "image/png"
+        }
+    ]
+}
