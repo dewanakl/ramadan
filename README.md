@@ -1,5 +1,7 @@
 # Ramadan Planner
 
+The Ramadan Planner aims to enhance the Ramadan experience by providing a comprehensive and efficient organizational system.
+
 ## Demo
 
 <https://dewanakl.github.io/ramadan>

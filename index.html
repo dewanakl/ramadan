@@ -26,6 +26,58 @@
         const endDate = '2024-04-09';
     </script>
 
+    <style>
+        .form-check-input-wajib {
+            border-color: #e8a598;
+        }
+
+        .form-check-input-wajib:checked {
+            background-color: #e8a598;
+            border-color: #e8a598;
+        }
+
+        .form-check-input-wajib:focus {
+            border-color: #e8a598 !important;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(232, 165, 152, .25);
+        }
+
+        .form-check-label-wajib {
+            color: #e8a598 !important;
+            font-weight: 600 !important;
+        }
+
+        .form-check-input-sunnah {
+            border-color: #fec89a;
+        }
+
+        .form-check-input-sunnah:checked {
+            background-color: #fec89a;
+            border-color: #fec89a;
+        }
+
+        .form-check-input-sunnah:focus {
+            border-color: #fec89a !important;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(254, 200, 154, .25);
+        }
+
+        .form-check-label-sunnah {
+            color: #fec89a !important;
+            font-weight: 600 !important;
+        }
+
+        .form-select-recitation {
+            border-color: #fae1dd;
+        }
+
+        .form-select-recitation:focus {
+            border-color: #fae1dd !important;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(250, 225, 221, .25);
+        }
+    </style>
+
     <script>
         if (!navigator.serviceWorker.controller) {
             navigator.serviceWorker.register(`sw.js?v=${VERSION}`, { scope: '/' })
@@ -103,27 +155,6 @@
                 <div class="card border-0 my-3 rounded-4">
                     <div class="card-body">
                         <p style="background-color: #fec5bb; font-size: 1rem; font-weight: 800;" class="p-2 rounded-3"><i class="fa-solid fa-moon me-2"></i>Wajib</p>
-                        <style>
-                            .form-check-input-wajib {
-                                border-color: #e8a598;
-                            }
-
-                            .form-check-input-wajib:checked {
-                                background-color: #e8a598;
-                                border-color: #e8a598;
-                            }
-
-                            .form-check-input-wajib:focus {
-                                border-color: #e8a598 !important;
-                                outline: 0;
-                                box-shadow: 0 0 0 0.25rem rgba(232, 165, 152, .25);
-                            }
-
-                            .form-check-label-wajib {
-                                color: #e8a598 !important;
-                                font-weight: 600 !important;
-                            }
-                        </style>
                         <div class="form-check">
                             <input class="form-check-input form-check-input-wajib" type="checkbox" id="Fajr">
                             <label class="form-check-label form-check-label-wajib" for="Fajr"></label>
@@ -206,27 +237,6 @@
                 <div class="card border-0 my-3 rounded-4">
                     <div class="card-body">
                         <p style="background-color: #fcd2af; font-size: 1rem; font-weight: 800;" class="p-2 rounded-3"><i class="fa-solid fa-star me-2"></i>Sunnah</p>
-                        <style>
-                            .form-check-input-sunnah {
-                                border-color: #fec89a;
-                            }
-
-                            .form-check-input-sunnah:checked {
-                                background-color: #fec89a;
-                                border-color: #fec89a;
-                            }
-
-                            .form-check-input-sunnah:focus {
-                                border-color: #fec89a !important;
-                                outline: 0;
-                                box-shadow: 0 0 0 0.25rem rgba(254, 200, 154, .25);
-                            }
-
-                            .form-check-label-sunnah {
-                                color: #fec89a !important;
-                                font-weight: 600 !important;
-                            }
-                        </style>
                         <div class="form-check">
                             <input class="form-check-input form-check-input-sunnah" type="checkbox" id="Tarawih">
                             <label class="form-check-label form-check-label-sunnah" for="Tarawih"></label>
@@ -291,17 +301,6 @@
         <div class="card border-0 rounded-4">
             <div class="card-body">
                 <p style="background-color: #fae1dd; font-size: 1rem; font-weight: 800;" class="p-2 rounded-3"><i class="fa-solid fa-book-quran me-2"></i>Recitation Tracker</p>
-                <style>
-                    .form-select-recitation {
-                        border-color: #fae1dd;
-                    }
-
-                    .form-select-recitation:focus {
-                        border-color: #fae1dd !important;
-                        outline: 0;
-                        box-shadow: 0 0 0 0.25rem rgba(250, 225, 221, .25);
-                    }
-                </style>
                 <div class="row">
                     <div class="col-9">
                         <label for="surah" class="form-label" style="font-weight: 600 !important;">Surah</label>
