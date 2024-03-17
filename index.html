@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <script>
-        const VERSION = '12';
+        const VERSION = '15';
         const startDate = '2024-03-12';
         const endDate = '2024-04-09';
     </script>
@@ -67,11 +67,11 @@
             font-weight: 600 !important;
         }
 
-        .form-select-recitation {
+        .form-recitation {
             border-color: #fae1dd;
         }
 
-        .form-select-recitation:focus {
+        .form-recitation:focus {
             border-color: #fae1dd !important;
             outline: 0;
             box-shadow: 0 0 0 0.25rem rgba(250, 225, 221, .25);
@@ -304,7 +304,7 @@
                 <div class="row">
                     <div class="col-9">
                         <label for="surah" class="form-label" style="font-weight: 600 !important;">Surah</label>
-                        <select class="form-select form-select-recitation" id="surah" style="font-weight: 600 !important;" oninput="localStorage.setItem('surah', String(this.value))">
+                        <select class="form-select form-recitation" id="surah" style="font-weight: 600 !important;" oninput="localStorage.setItem('surah', String(this.value))">
                             <option value="0">Open this select menu</option>
                             <option value="1">Al-Fatihah</option>
                             <option value="2">Al-Baqarah</option>
@@ -427,7 +427,7 @@
                     </div>
                     <div class="col-3">
                         <label for="ayat" class="form-label" style="font-weight: 600 !important;">Ayat</label>
-                        <input type="number" class="form-control form-control-recitation" id="ayat" style="font-weight: 600 !important;" oninput="localStorage.setItem('ayat', String(this.value))" value="0">
+                        <input type="number" class="form-control form-recitation" id="ayat" style="font-weight: 600 !important;" oninput="localStorage.setItem('ayat', String(this.value))" value="0">
                         <script>
                             document.getElementById('ayat').value = parseInt(localStorage.getItem('ayat') ?? 0);
                         </script>
